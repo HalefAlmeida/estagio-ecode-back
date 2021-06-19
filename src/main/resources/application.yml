@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /ecode
+
+application:
+  description: API estágio - Agência e/code
+  version: 1.0.0
+
+jwt:
+  secret=testedetesteparaotestedoteste
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://tfzdumknkyilxc:ab695aad77563af3fc9b6c9a0a15b40ffd92e472dd12891551823647e1c3e039@ec2-52-4-111-46.compute-1.amazonaws.com:5432/dbdsahrop55qpl
+    username: tfzdumknkyilxc
+    password: ab695aad77563af3fc9b6c9a0a15b40ffd92e472dd12891551823647e1c3e039
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
